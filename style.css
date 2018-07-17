@@ -1,0 +1,98 @@
+ body {
+     font-family: "Open Sans";
+     color: #69696a;
+     background: #f9fafc;
+ }
+
+ header {
+     height: 150px;
+ }
+
+ #logo {
+     float: left;
+     margin-left: 20px;
+     font-size: 1.05em;
+     color: #000;
+ }
+ h1 {
+     color: #000;
+ }
+ 
+ ul {
+     float: right;
+     margin-right: 20px;
+ }
+ li {
+    display: inline;
+    //float: right;
+    padding: 8px;
+    font-size: 12px;
+}
+
+li:last-child, #scroll {
+    background: black;
+    color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+main {
+    margin: 0 20px;
+    //background: pink;
+    height: 600px;
+    clear: both;
+    position: relative;
+    
+}
+
+main p {
+    border-left: 2px solid #69696a;
+    padding-left: 10px;
+    float: left;
+    width: 60%;
+}
+
+#container {
+    //background: orange;
+    height: 200px;
+    width: 35%;
+    float: right;
+    position: relative;
+}
+
+#one, #two, #three {
+    border-radius: 50%;
+}
+
+#one {
+    background: rgba(247, 136, 167, 0.6);
+    height: 175px;
+    width: 175px;
+    position: absolute;
+}
+
+#two {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background: rgba(207, 130, 213, 0.6);
+    right: 0;
+    top: 20px;
+}
+
+#three {
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    background: rgba(247, 193, 162, 0.7);
+    bottom: 0;
+    right: 0;
+}
+
+footer p {
+    text-align: center;
+}
