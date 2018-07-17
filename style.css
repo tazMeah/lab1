@@ -53,7 +53,7 @@ main {
 
 main p {
     border-left: 2px solid #69696a;
-    padding-left: 10px;
+    padding-left: 20px;
     float: left;
     width: 60%;
 }
