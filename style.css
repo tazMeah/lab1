@@ -1,115 +1,156 @@
- body {
-     font-family: "Open Sans";
-     color: #69696a;
-     height: 200vh;
-     background: #f9fafc;
- }
+body {
+    font-family: "Open Sans";
+    color: #69696a;
+   /* height: 200vh; */
+    background: #f9fafc;
+}
 
- header {
-     height: 150px;
- }
+header {
+    height: 150px;
+}
 
- #logo {
-     float: left;
-     margin-left: 20px;
-     font-size: 1.05em;
-     color: #000;
- }
- h1 {
-     color: #000;
- }
- 
- ul {
-     float: right;
-     margin-right: 20px;
- }
- li {
-    display: inline;
-    //float: right;
-    padding: 8px;
-    font-size: 12px;
+#logo {
+    float: left;
+    margin-left: 20px;
+    font-size: 1.05em;
+    color: #000;
+}
+h1 {
+    color: #000;
+}
+
+ul {
+    float: right;
+    margin-right: 20px;
+}
+li {
+   display: inline;
+   //float: right;
+   padding: 8px;
+   font-size: 12px;
 }
 
 li:last-child, #scroll {
-    background: black;
-    color: white;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    padding: 10px 20px;
-    text-align: center;
-    cursor: pointer;
+   background: black;
+   color: white;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   padding: 10px 20px;
+   text-align: center;
+   cursor: pointer;
 }
 
 main {
-    margin: 0 20px;
-    //background: pink;
-    height: 400px;
-    clear: both;
-    position: relative;
-    
+   margin: 0 20px;
+   //background: pink;
+   height: 400px;
+   clear: both;
+   position: relative;
+   
 }
 
 main p {
-    border-left: 2px solid #69696a;
-    padding-left: 20px;
-    float: left;
-    width: 50%;
-    font-size: 14px;
+   border-left: 2px solid #69696a;
+   padding-left: 20px;
+   float: left;
+   width: 50%;
+   font-size: 14px;
 }
 
 #container {
-    //background: orange;
-    height: 310px;
-    width: 310px;
-    float: right;
-    position: relative;
+   //background: orange;
+   height: 310px;
+   width: 310px;
+   float: right;
+   position: relative;
 }
 
 #one, #two, #three {
-    border-radius: 50%;
+   border-radius: 50%;
 }
 
 #one {
-    background: rgba(247, 136, 167, 0.6);
-    height: 240px;
-    width: 240px;
-    position: absolute;
+   background: rgba(247, 136, 167, 0.6);
+   height: 240px;
+   width: 240px;
+   position: absolute;
 }
 
 #two {
-    position: absolute;
-    height: 120px;
-    width: 120px;
-    background: rgba(207, 130, 213, 0.6);
-    right: 0;
-    top: 30px;
+   position: absolute;
+   height: 120px;
+   width: 120px;
+   background: rgba(207, 130, 213, 0.6);
+   right: 0;
+   top: 30px;
 }
 
 #three {
-    position: absolute;
-    height: 155px;
-    width: 155px;
-    background: rgba(247, 193, 162, 0.7);
-    bottom: 35px;
-    right: 0;
+   position: absolute;
+   height: 155px;
+   width: 155px;
+   background: rgba(247, 193, 162, 0.7);
+   bottom: 35px;
+   right: 0;
 }
 
 footer {
-    width: 100%;
-    height: 100px;
-    position: fixed;
+   width: 100%;
+   /*height: 100px;*/
+   /*position: fixed;*/
 }
 footer p {
-    text-align: center;
-    
+   text-align: center;
+   
 }
 
 #scroll {
-    position: relative;
-    bottom: 20px;
-    cursor: pointer;
-    font-size: 14px;
+   position: relative;
+   /*bottom: 20px;*/
+   cursor: pointer;
+   font-size: 14px;
 
+}
+
+@media only screen and (max-width: 480px) {
+    #container{
+        display: none;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    ul {
+        float: none;
+    }
+    #scroll {
+        display: none;
+    }
+
+    #mobileP {
+        //background: black;
+        text-align: center;
+        
+    }
+
+    #mobileScroll {
+        background: black;
+        color: white;
+        padding: 10px 100px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;        
+    }
+
+    
 }
