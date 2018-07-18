@@ -152,5 +152,20 @@ footer p {
         border-bottom-right-radius: 25px;        
     }
 
+     li{
+         position: relative;
+         right: 25px;
+    }
+
+    li:last-child {
+        position: relative;
+        left: 0px;
+    }
     
+}
+
+@media only screen and (min-width: 481px) {
+    #mobileP {
+        display: none;
+    }
 }
