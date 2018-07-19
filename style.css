@@ -1,171 +1,113 @@
 body {
-    font-family: "Open Sans";
-    color: #69696a;
-   /* height: 200vh; */
     background: #f9fafc;
+    font-family: "Open Sans";
+    padding: 7px;
 }
 
-header {
-    height: 150px;
-}
-
-#logo {
-    float: left;
-    margin-left: 20px;
-    font-size: 1.05em;
-    color: #000;
-}
-h1 {
-    color: #000;
-}
 
 ul {
-    float: right;
-    margin-right: 20px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
 }
+
 li {
-   display: inline;
-   //float: right;
-   padding: 8px;
-   font-size: 12px;
+    padding: 5px;
 }
 
-li:last-child, #scroll {
-   background: black;
-   color: white;
-   border-top-left-radius: 25px;
-   border-top-right-radius: 25px;
-   border-bottom-left-radius: 25px;
-   border-bottom-right-radius: 25px;
-   padding: 10px 20px;
-   text-align: center;
-   cursor: pointer;
-}
-
-main {
-   margin: 0 20px;
-   //background: pink;
-   height: 400px;
-   clear: both;
-   position: relative;
-   
-}
-
-main p {
-   border-left: 2px solid #69696a;
-   padding-left: 20px;
-   float: left;
-   width: 50%;
-   font-size: 14px;
-}
-
-#container {
-   //background: orange;
-   height: 310px;
-   width: 310px;
-   float: right;
-   position: relative;
-}
-
-#one, #two, #three {
-   border-radius: 50%;
-}
-
-#one {
-   background: rgba(247, 136, 167, 0.6);
-   height: 240px;
-   width: 240px;
-   position: absolute;
-}
-
-#two {
-   position: absolute;
-   height: 120px;
-   width: 120px;
-   background: rgba(207, 130, 213, 0.6);
-   right: 0;
-   top: 30px;
-}
-
-#three {
-   position: absolute;
-   height: 155px;
-   width: 155px;
-   background: rgba(247, 193, 162, 0.7);
-   bottom: 35px;
-   right: 0;
-}
-
-footer {
-   width: 100%;
-   /*height: 100px;*/
-   /*position: fixed;*/
-}
-footer p {
-   text-align: center;
-   
-}
-
-#scroll {
-   position: relative;
-   /*bottom: 20px;*/
-   cursor: pointer;
-   font-size: 14px;
-
-}
-
-@media only screen and (max-width: 480px) {
-    #container{
-        display: none;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-        height: 300px;
-    }
-
-    nav li {
-        display: block;
-    }
-
-    ul {
-        float: none;
-    }
-    #scroll {
-        display: none;
-    }
-
-    #mobileP {
-        //background: black;
-        text-align: center;
-        
-    }
-
-    #mobileScroll {
-        background: black;
-        color: white;
-        padding: 10px 100px;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;        
-    }
-
-     li{
-         position: relative;
-         right: 25px;
-    }
-
-    li:last-child {
-        position: relative;
-        left: 0px;
-    }
+li:last-child {
+    background: black;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-top: 10px;
+    padding: 15px 25px;
     
 }
 
-@media only screen and (min-width: 481px) {
-    #mobileP {
+nav, main p {
+    color: #69696a;
+}
+
+main p {
+    border-left: 3px solid #69696a;
+    padding-left: 14px; 
+    margin-bottom: 130px;
+}
+    
+@media only screen and (max-width: 655px) {
+
+    #circles {
         display: none;
     }
 }
+
+
+@media only screen and (min-width: 480px) {
+
+    header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        display: inline;
+        font-size: 14px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+   
+    #container {
+        display: flex;
+    }
+
+    #container p {
+        flex: 5;
+    }
+
+
+    #circles {
+        position: relative;
+        flex: 5;
+    }
+    #one {
+        height: 240px;
+        width: 240px;
+        background: rgba(247, 136, 167, 0.6);
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right:70px;
+    }
+ 
+    #two {
+        height: 115px;
+        width: 115px;
+        background: rgba(207, 130, 213, 0.6);
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        right: 0;
+    }
+
+    #three {
+        height: 150px;
+        width: 150px;
+        background: rgba(247, 193, 162, 0.7);
+        border-radius: 50%;
+        position: absolute;
+        top: 120px;
+        right: 0;
+    }
+
+  
+}
+    
